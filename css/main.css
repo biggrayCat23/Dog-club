@@ -31,17 +31,85 @@
   src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 :root {
-  --color-primary-light: #FFFFFF;
-  --color-primary-medium: #FF9F0E;
+  --color-primary-light: #ffffff;
+  --color-primary-medium: #ff9f0e;
   --color-primary-dark: #181817;
-  --color-secondary-first: #FCB62A;
-  --color-secondary-second: #FFFAF3;
-  --color-secondary-third: #F1F3FF;
-  --color-secondary-fourth: #839AA9;
-  --color-secondary-fifth: #F9F9FF;
-  --color-secondary-sixth: #D9A6FF;
+  --color-secondary-first: #fcb62a;
+  --color-secondary-second: #fffaf3;
+  --color-secondary-third: #f1f3ff;
+  --color-secondary-fourth: #839aa9;
+  --color-secondary-fifth: #f9f9ff;
+  --color-secondary-sixth: #d9a6ff;
 }
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1440px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /*154% */
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary-dark);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+a:hover {
+  color: var(--color-primary-medium);
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+
+.button {
+  border: 1px solid var(--color-primary-medium);
+  border-radius: 8px;
+  background-color: var(--color-primary-medium);
+  color: var(--color-primary-light);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button:hover {
+  border-color: var(--color-secondary-first);
+  background-color: var(--color-secondary-first);
+}
+
+.header {
+  display: flex;
+  gap: 115px;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 182px;
+  height: 43px;
+}
+.header__navigarion-list {
+  display: flex;
+  gap: 48px;
+}
+.header__navigation-item {
+  list-style-type: none;
+}
+.header__controls {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.header__controls__basket {
+  fill: var(--color-primary-medium);
+  width: 40px;
+  height: 40px;
 }/*# sourceMappingURL=main.css.map */
